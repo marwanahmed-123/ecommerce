@@ -19,9 +19,7 @@ export default function ProductCard({ product }) {
       {loading && <Loading />}
       <div className="card px-2 py-3">
         <div className="gap p-4 overflow-hidden group hover:shadow-[0px_4px_15px_rgba(22,163,74,0.5)] transition-all duration-500 rounded-lg">
-          <Link
-            to={`/e-commerce/ProductDetails/${product._id}/${product.category._id}`}
-          >
+          <Link to={`/ProductDetails/${product._id}/${product.category._id}`}>
             <img
               className="w-full md:h-52 object-cover object-center mb-8"
               src={product.imageCover}
